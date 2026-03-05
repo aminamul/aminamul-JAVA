@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class example2 {
+    public static void main(String[] args) {
+        int[] B = new int[15];
+        int sum = 0;
+        System.out.print("Массив B: ");
+        for (int i = 0; i < B.length; i++) {
+            B[i] = (int) (Math.random() * 21 - 10); // [-10, 10]
+            System.out.print(B[i] + " ");
+            if (B[i] > 0) sum += B[i];
+        }
+        System.out.println("\nСумма положительных элементов: " + sum);
+    }
+}
